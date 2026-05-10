@@ -64,3 +64,19 @@
 ---
 
 *Файл ведётся параллельно с разработкой. Каждый коммит в v2/ должен отражаться здесь.*
+
+### v2.1 (10.05.2026) — Оптимизация Блоки 1-4
+**Коммит:** `64d54e9`
+
+| Изменение | Файл | Что сделано |
+|-----------|------|-------------|
+| Preload LCP | `index.html` | `<link rel="preload">` для Screenshot_1-1.png с `fetchpriority="high"` |
+| Preconnect | `index.html` | Добавлен preconnect для static.addtoany.com |
+| Defer JS | `index.html` | jQuery, jquery-migrate(закомментирован), cookie.js, wt-location.js перенесены в конец body с defer |
+| Убран lazyload | `index.html` | Удалён preload-link и тег lazyload.min.js |
+| Дубль CSS | `index.html` | Удалён finbank_theme-style-css (дубль style.css) |
+| Slick локально | `index.html` + файлы | Скачаны slick.css, slick-theme.css, slick.min.js; CDN-ссылки заменены на локальные |
+| font-display | `style.css` | Проверено: уже содержит `font-display: swap` для всех шрифтов Lato ✅ |
+| width/height | `index.html` | Добавлены 420x264 для карточек МФО, 40x40 для логотипов навигации |
+| aria-label | `index.html` | 80 кнопок `.btn__compare` получили `aria-label="Сравнить"` |
+| Alt-тексты | `index.html` | Логотипы банков в навигации получили alt с названиями |
