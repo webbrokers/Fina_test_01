@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="ru-RU" >
 
-<head><style>img.lazy{min-height:1px}</style><link href="../../wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
+<head><style>img.lazy{min-height:1px}</style>
 <meta charset="UTF-8">
+<link rel="preload" as="image" href="../../wp-content/uploads/2022/09/Screenshot_1-1.png" fetchpriority="high">
 <meta name="viewport" content="width=device-width">
 <link rel="apple-touch-icon" sizes="180x180" href="https://finabank.ru/wp-content/themes/finbank_theme/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../wp-content/themes/finbank_theme/img/favicons/favicon-32x32.png">
@@ -38,6 +39,7 @@
 <link rel='dns-prefetch' href='https://www.googletagmanager.com/' />
 <link rel='dns-prefetch' href='https://www.clarity.ms/' />
 <link href='https://cdn.jsdelivr.net' crossorigin rel='preconnect' />
+<link rel='preconnect' href='https://static.addtoany.com' crossorigin>
 <link href='https://mc.yandex.ru' crossorigin rel='preconnect' />
 <link href='https://www.googletagmanager.com' crossorigin rel='preconnect' />
 <link href='https://www.clarity.ms' crossorigin rel='preconnect' />
@@ -57,7 +59,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 <link rel='stylesheet' id='wp-postratings-css' href='../../wp-content/plugins/wp-postratings/css/postratings-css.css%3Fver=1.91.2.css' media='all' />
 <link rel='stylesheet' id='wp-ulike-css' href='../../wp-content/plugins/wp-ulike/assets/css/wp-ulike.min.css%3Fver=5.0.3.css' media='all' />
-<link rel='stylesheet' id='finbank_theme-style-css' href='../../wp-content/themes/finbank_theme/style.css%3Fver=1.0.0.css' media='all' />
 <link rel='stylesheet' id='style-css' href='../../wp-content/themes/finbank_theme/css/style.css%3Fver=1778234128.css' media='all' />
 <link rel='preload' as='style' onload='this.onload=null;this.rel="stylesheet"' id='custom-new-v2-css' href='../../wp-content/themes/finbank_theme/css/custom.css%3Fver=1778234128.css' media='all' />
 <noscript><link rel='stylesheet' id='custom-new-v2-css' href='../../wp-content/themes/finbank_theme/css/custom.css%3Fver=1778234128.css' media='all' />
@@ -67,8 +68,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <noscript><link rel='stylesheet' id='codes-css' href='../../wp-content/themes/finbank_theme/css/codes.css%3Fver=1778234128.css' media='all' />
 </noscript><link rel='preload' as='style' onload='this.onload=null;this.rel="stylesheet"' id='fancybox-css' href='../../wp-content/themes/finbank_theme/css/fancybox.css%3Fver=1778234128.css' media='all' />
 <noscript><link rel='stylesheet' id='fancybox-css' href='../../wp-content/themes/finbank_theme/css/fancybox.css%3Fver=1778234128.css' media='all' />
-</noscript><link rel='stylesheet' id='slick-css-css' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?ver=6.9.4' media='all' />
-<link rel='stylesheet' id='slick-theme-css-css' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css?ver=6.9.4' media='all' />
+</noscript><link rel='stylesheet' id='slick-css-css' href='../../wp-content/themes/finbank_theme/css/slick.css' media='all' />
+<link rel='stylesheet' id='slick-theme-css-css' href='../../wp-content/themes/finbank_theme/css/slick-theme.css' media='all' />
 <link rel='stylesheet' id='addtoany-css' href='../../wp-content/plugins/add-to-any/addtoany.min.css%3Fver=1.16.css' media='all' />
 <link rel='stylesheet' id='ald-styles-css' href='../../wp-content/plugins/ajax-load-more-anything/assets/styles.min.css%3Fver=3.3.9.css' media='all' />
 <script id="addtoany-core-js-before">
@@ -99,11 +100,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 //# sourceURL=addtoany-core-js-before
 </script>
 <script defer src="https://static.addtoany.com/menu/page.js" id="addtoany-core-js"></script>
-<script src="../../wp-includes/js/jquery/jquery.min.js%3Fver=3.7.1" id="jquery-core-js"></script>
-<script src="../../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=3.4.1" id="jquery-migrate-js"></script>
 <script defer src="../../wp-content/plugins/add-to-any/addtoany.min.js%3Fver=1.1" id="addtoany-jquery-js"></script>
-<script src="../../wp-content/plugins/wt_geotargeting_pro/js/cookie.js%3Fver=0.2.0" id="wt-cookie-js"></script>
-<script src="../../wp-content/plugins/wt_geotargeting_pro/js/wt-location.js%3Fver=1" id="wt-location-js"></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://finabank.ru/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.9.4" />
 <link rel='shortlink' href='https://finabank.ru/?p=5775' />
@@ -379,7 +376,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                                                             <svg width="16" height="18" viewBox="0 0 24 26" xmlns="http://www.w3.org/2000/svg"><path d="M21.706 8.579v.5h.5v-.5h-.5Zm-15.53 2.526v-.5a.5.5 0 0 0-.5.5h.5Zm-2.588 0h.5a.5.5 0 0 0-.5-.5v.5Zm0 8.842v.5a.5.5 0 0 0 .5-.5h-.5Zm-1.294 0v-.5a.5.5 0 0 0-.5.5h.5Zm0 2.527v.5a.5.5 0 0 0 .5-.5h-.5Zm5.177 0h-.5a.5.5 0 0 0 .5.5v-.5Zm0-2.527h.5a.5.5 0 0 0-.5-.5v.5Zm-1.295 0h-.5a.5.5 0 0 0 .5.5v-.5Zm14.236-8.842v-.5a.5.5 0 0 0-.5.5h.5Zm-2.588 0h.5a.5.5 0 0 0-.5-.5v.5Zm0 8.842v.5a.5.5 0 0 0 .5-.5h-.5Zm-1.295 0v-.5a.5.5 0 0 0-.5.5h.5Zm0 2.527v.5a.5.5 0 0 0 .5-.5h-.5Zm5.177 0h-.5a.5.5 0 0 0 .5.5v-.5Zm0-2.527h.5a.5.5 0 0 0-.5-.5v.5Zm-1.294 0h-.5a.5.5 0 0 0 .5.5v-.5Zm.983-15.104.19-.463-.19.463Zm-9.584-3.766L12 1.54l-.19-.463Zm.378 0L12 1.54l.19-.463ZM2.605 4.843l-.19-.463.19.463Zm19.1 3.236H2.296v1h19.41v-1ZM2.796 5.306 12 1.54l-.379-.925L2.416 4.38l.378.926ZM12 1.54l9.206 3.766.378-.926L12.38.615 12 1.54ZM2.794 8.58V6.143h-1v2.436h1Zm0-2.436v-.837h-1v.837h1Zm18.412-.837v.837h1v-.837h-1Zm0 .837v2.436h1V6.143h-1Zm-18.912.5h19.412v-1H2.294v1Zm1.294 12.804H2.294v1h1.294v-1Zm-1.794.5v2.527h1v-2.527h-1Zm6.177 2.527v-2.527h-1v2.527h1Zm-.5-3.027H6.176v1h1.295v-1Zm10.352 0H16.53v1h1.294v-1Zm-1.794.5v2.527h1v-2.527h-1Zm6.177 2.527v-2.527h-1v2.527h1Zm-.5-3.027h-1.294v1h1.294v-1Zm0 3.527h.794v-1h-.794v1Zm.794 0V24.5h1v-1.526h-1Zm0 1.526h-21v1h21v-1Zm-21 0v-1.526h-1V24.5h1Zm0-1.526h.794v-1H1.5v1Zm2.088-12.369H1.5v1h2.088v-1Zm-2.088 0V9.08h-1v1.526h1Zm21-1.526v1.526h1V9.08h-1Zm0 1.526h-2.088v1H22.5v-1ZM1.5 9.08h.794v-1H1.5v1Zm.794 0H22.5v-1H2.294v1Zm3.382 2.026v8.842h1v-8.842h-1Zm-1.588 8.842v-8.842h-1v8.842h1Zm15.824-8.842v8.842h1v-8.842h-1Zm-1.588 8.842v-8.842h-1v8.842h1ZM7.47 22.974H12v-1H7.47v1Zm4.529 0h4.53v-1H12v1ZM6.176 11.605H12v-1H6.176v1Zm5.824 0h5.823v-1H12v1Zm.5 10.869V11.105h-1v11.369h1Zm10-11.869v1a1 1 0 0 0 1-1h-1Zm1-1.526a1 1 0 0 0-1-1v1h1Zm-22 0v-1a1 1 0 0 0-1 1h1Zm0 1.526h-1a1 1 0 0 0 1 1v-1Zm0 13.895h-1a1 1 0 0 0 1 1v-1ZM21.206 5.306h1a1 1 0 0 0-.622-.926l-.378.926ZM22.5 22.974h1a1 1 0 0 0-1-1v1Zm0 1.526v1a1 1 0 0 0 1-1h-1Zm-21-1.526v-1a1 1 0 0 0-1 1h1ZM12 1.54l.379-.925a1 1 0 0 0-.758 0L12 1.54ZM2.416 4.38a1 1 0 0 0-.622.926h1l-.378-.926Z"></path></svg>
                                                             банки
                                                         </a>
-                                                        <div class="navigation__sub-item"><a href="https://finabank.ru/banks/bzhf-bank/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2023/11/unnamed-1.png" alt="">БЖФ Банк</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/vserossiyskiy-bank-razvitiya-regionov-vbrr/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2024/11/vbrr.svg" alt="">ВБРР</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/bystrobank/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2026/04/bystrobank.jpeg" alt="">БыстроБанк</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/renessans-kredit/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2022/12/renessans-logo1.jpg" alt="">Ренессанс Банк</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/dom-rf/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2024/11/dom-rf.png" alt="">ДОМ.РФ</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/mkb/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2024/09/mkb.jpg" alt="">МКБ</a></div>                                                    </div>
+                                                        <div class="navigation__sub-item"><a href="https://finabank.ru/banks/bzhf-bank/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2023/11/unnamed-1.png" alt="БЖФ Банк" width="40" height="40">БЖФ Банк</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/vserossiyskiy-bank-razvitiya-regionov-vbrr/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2024/11/vbrr.svg" alt="ВБРР" width="40" height="40">ВБРР</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/bystrobank/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2026/04/bystrobank.jpeg" alt="БыстроБанк" width="40" height="40">БыстроБанк</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/renessans-kredit/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2022/12/renessans-logo1.jpg" alt="Ренессанс Банк" width="40" height="40">Ренессанс Банк</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/dom-rf/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2024/11/dom-rf.png" alt="ДОМ.РФ" width="40" height="40">ДОМ.РФ</a></div><div class="navigation__sub-item"><a href="https://finabank.ru/banks/mkb/" class="navigation__sub-link"><img  src="../../wp-content/uploads/2024/09/mkb.jpg" alt="МКБ" width="40" height="40">МКБ</a></div>                                                    </div>
                                                 </div>
                                             </div>
                                         </li>
@@ -1163,7 +1160,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1643" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1643" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -1533,7 +1530,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1643" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1643" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -1722,7 +1719,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="226" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="226" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -2092,7 +2089,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="226" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="226" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -2282,7 +2279,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2096" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2096" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -2654,7 +2651,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2096" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2096" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -2842,7 +2839,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1641" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1641" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -3210,7 +3207,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1641" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1641" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -3400,7 +3397,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5619" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5619" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -3772,7 +3769,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5619" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5619" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -3960,7 +3957,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2086" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2086" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -4328,7 +4325,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2086" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2086" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -4516,7 +4513,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9302" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9302" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -4910,7 +4907,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9302" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9302" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -5098,7 +5095,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9369" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9369" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -5492,7 +5489,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9369" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9369" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -5680,7 +5677,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9213" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9213" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -6048,7 +6045,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9213" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9213" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -6236,7 +6233,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5786" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5786" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -6630,7 +6627,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5786" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5786" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -6819,7 +6816,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5627" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5627" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -7189,7 +7186,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5627" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5627" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -7378,7 +7375,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2094" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2094" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -7760,7 +7757,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2094" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2094" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -7948,7 +7945,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="10162" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="10162" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -8342,7 +8339,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="10162" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="10162" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -8531,7 +8528,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1645" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1645" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -8890,7 +8887,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1645" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1645" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -9079,7 +9076,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5617" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5617" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -9449,7 +9446,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5617" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5617" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -9638,7 +9635,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5796" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5796" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -10008,7 +10005,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5796" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5796" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -10198,7 +10195,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2073" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2073" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -10570,7 +10567,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2073" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2073" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -10758,7 +10755,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="7753" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="7753" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -11126,7 +11123,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="7753" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="7753" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -11315,7 +11312,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="12325" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="12325" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -11685,7 +11682,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="12325" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="12325" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -11875,7 +11872,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2090" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2090" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -12247,7 +12244,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2090" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2090" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -12436,7 +12433,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1817" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1817" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -12806,7 +12803,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1817" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1817" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -12995,7 +12992,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2133" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2133" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -13365,7 +13362,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2133" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2133" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -13555,7 +13552,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5808" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5808" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -13846,7 +13843,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5808" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5808" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -14035,7 +14032,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1647" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1647" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -14405,7 +14402,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1647" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1647" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -14594,7 +14591,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2118" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2118" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -14964,7 +14961,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2118" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2118" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -15153,7 +15150,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="6300" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="6300" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -15523,7 +15520,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="6300" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="6300" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -15710,7 +15707,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2099" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2099" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -16090,7 +16087,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2099" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2099" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -16278,7 +16275,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5798" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5798" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -16658,7 +16655,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5798" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5798" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -16846,7 +16843,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="6293" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="6293" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -17214,7 +17211,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="6293" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="6293" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -17404,7 +17401,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5633" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5633" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -17776,7 +17773,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5633" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5633" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -17964,7 +17961,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2072" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2072" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -18332,7 +18329,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2072" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2072" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -18521,7 +18518,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="7524" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="7524" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -18891,7 +18888,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="7524" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="7524" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -19079,7 +19076,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="10165" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="10165" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -19481,7 +19478,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="10165" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="10165" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -19671,7 +19668,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="10151" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="10151" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -20069,7 +20066,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="10151" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="10151" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -20258,7 +20255,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2071" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2071" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -20628,7 +20625,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2071" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2071" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -20816,7 +20813,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1649" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1649" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -21224,7 +21221,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="1649" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="1649" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -21414,7 +21411,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9216" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9216" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -21786,7 +21783,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="9216" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="9216" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -21972,7 +21969,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2125" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2125" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -22330,7 +22327,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2125" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2125" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -22519,7 +22516,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5788" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5788" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -22889,7 +22886,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="5788" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="5788" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -23079,7 +23076,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
                         </span>
                     </div>
                 
-                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2070" data-tax="zaimy">
+                <a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2070" data-tax="zaimy">
                     <svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
                         <use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
                     </svg>
@@ -23477,7 +23474,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 				
 
 
-				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" data-id="2070" data-tax="zaimy">
+				<a class="btn__compare  btn btn-outline-primary btn-sm btn-icon d-flex align-items-center justify-content-center" aria-label="Сравнить" data-id="2070" data-tax="zaimy">
 					<svg width="13" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 17" xml:space="preserve">
 						<use xlink:href="../../wp-content/themes/finbank_theme/img/icons.svg#stats" x="0" y="0"></use>
 					</svg>
@@ -25329,7 +25326,7 @@ window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overl
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2026/04/person-writing-laptop-with-credit-card-scaled.jpg"
-												alt="Изменения условий микрозаймов">
+												alt="Изменения условий микрозаймов" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">02.04.26</div>
 									<a href="https://finabank.ru/kak-izmenyatsya-usloviya-mikrokreditovaniya-s-1-aprelya-2026/" class="article__title h4 stretched-link">Как изменятся условия микрокредитования с 1 апреля 2026</a>
@@ -25380,7 +25377,7 @@ alt="Дарья Крестьяшина">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2025/09/b7a54181-5714-4049-b9d0-b2d122ffe321.jpg"
-												alt="">
+												alt="" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">15.09.25</div>
 									<a href="https://finabank.ru/srochnyy-zayom-teper-ne-tak-bystro-chto-menyaetsya-s-1-sentyabrya/" class="article__title h4 stretched-link">Срочный заём? Теперь не так быстро: что изменилось с 1 сентября</a>
@@ -25431,7 +25428,7 @@ alt="Дарья Крестьяшина">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2025/08/top-view-people-discussing-finances-manners.jpg"
-												alt="Один микрозайм">
+												alt="Один микрозайм" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">20.08.25</div>
 									<a href="https://finabank.ru/zayomschiki-smogut-oformlyat-tolko-odin-mikrozaym-s-2026-goda-v-rossii-vvedut-novye-ogranicheniya-dlya-mfo/" class="article__title h4 stretched-link">Заёмщики смогут оформлять только один микрозайм: с 2026 года в России введут новые ограничения для МФО</a>
@@ -25482,7 +25479,7 @@ alt="Анастасия Толмачева">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2024/11/aktsiya-finterra-e1730546956720.png"
-												alt="Акция Финтерра">
+												alt="Акция Финтерра" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">02.11.24</div>
 									<a href="https://finabank.ru/aktsiya-dlya-klientov-mkk-finterra/" class="article__title h4 stretched-link">Акция для клиентов МКК Финтерра</a>
@@ -25560,7 +25557,7 @@ alt="Евгений Решетников">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2026/04/chatgpt-image-17-apr.-2026-g.-08_42_54.png"
-												alt="Закрытые МФО Апрель 2026">
+												alt="Закрытые МФО Апрель 2026" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">14.04.26</div>
 									<a href="https://finabank.ru/kakie-mfo-zakrylis-v-2026-godu/" class="article__title h4 stretched-link">Какие МФО закрылись в 2026 году</a>
@@ -25611,7 +25608,7 @@ alt="Дарья Крестьяшина">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2025/12/business-people-shaking-hands-finishing-up-meeting-scaled.jpg"
-												alt="Микрозаймы для ИП">
+												alt="Микрозаймы для ИП" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">05.12.25</div>
 									<a href="https://finabank.ru/mikrozaymy-dlya-ip/" class="article__title h4 stretched-link">Микрозаймы для ИП: где взять деньги на развитие бизнеса</a>
@@ -25662,7 +25659,7 @@ alt="Дарья Крестьяшина">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2025/08/hand-counting-savings.jpg"
-												alt="Тюрьма за неуплаты займов">
+												alt="Тюрьма за неуплаты займов" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">05.09.25</div>
 									<a href="https://finabank.ru/mogut-li-posadit-v-tyurmu-za-neuplatu-mikrozaymov/" class="article__title h4 stretched-link">Могут ли посадить в тюрьму за неуплату микрозаймов?</a>
@@ -25713,7 +25710,7 @@ alt="Анастасия Толмачева">
 																			<div class="card__image">
 											<img
 												 src="../../wp-content/uploads/2025/08/hacker-with-laptop-golden-credit-card.jpg"
-												alt="Мошенники оформляют займы">
+												alt="Мошенники оформляют займы" width="420" height="264">
 										</div>
 																		<div class="card__date my-2">22.08.25</div>
 									<a href="https://finabank.ru/kak-moshenniki-oformlyayut-mikrozaym-na-vashe-imya/" class="article__title h4 stretched-link">Могут ли мошенники оформить микрокредит на ваше имя?</a>
@@ -28032,18 +28029,18 @@ alt="Анастасия Толмачева">
 var eafl_public = {"home_url":"https://finabank.ru/","ajax_url":"https://finabank.ru/wp-admin/admin-ajax.php","nonce":"2546e4e58d"};
 //# sourceURL=eafl-public-js-extra
 </script>
-<script src="../../wp-content/plugins/easy-affiliate-links/dist/public.js%3Fver=3.8.1" id="eafl-public-js"></script>
+<script defer src="../../wp-content/plugins/easy-affiliate-links/dist/public.js%3Fver=3.8.1" id="eafl-public-js"></script>
 <script id="wp-postratings-js-extra">
 var ratingsL10n = {"plugin_url":"https://finabank.ru/wp-content/plugins/wp-postratings","ajax_url":"https://finabank.ru/wp-admin/admin-ajax.php","text_wait":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043d\u0435 \u0433\u043e\u043b\u043e\u0441\u0443\u0439\u0442\u0435 \u0437\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.","image":"","image_ext":"svg","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
 var ratings_mouseover_image=new Image();ratings_mouseover_image.src="https://finabank.ru/wp-content/plugins/wp-postratings/images//rating_over.svg";;
 //# sourceURL=wp-postratings-js-extra
 </script>
-<script src="../../wp-content/plugins/wp-postratings/js/postratings-js.js%3Fver=1.91.2" id="wp-postratings-js"></script>
+<script defer src="../../wp-content/plugins/wp-postratings/js/postratings-js.js%3Fver=1.91.2" id="wp-postratings-js"></script>
 <script id="wp_ulike-js-extra">
 var wp_ulike_params = {"ajax_url":"https://finabank.ru/wp-admin/admin-ajax.php","notifications":"0"};
 //# sourceURL=wp_ulike-js-extra
 </script>
-<script src="../../wp-content/plugins/wp-ulike/assets/js/wp-ulike.min.js%3Fver=5.0.3" id="wp_ulike-js"></script>
+<script defer src="../../wp-content/plugins/wp-ulike/assets/js/wp-ulike.min.js%3Fver=5.0.3" id="wp_ulike-js"></script>
 <script src="../../wp-content/themes/finbank_theme/js/fancybox.umd.js%3Fver=1778234128" id="fancy-script-js" defer data-wp-strategy="defer"></script>
 <script src="../../wp-content/themes/finbank_theme/js/fslightbox_pro.js%3Fver=1778234128" id="fslightbox-js" defer data-wp-strategy="defer"></script>
 <script src="../../wp-content/themes/finbank_theme/js/test.js%3Fver=1778234128" id="main-script-js" defer data-wp-strategy="defer"></script>
@@ -28056,7 +28053,7 @@ var card_loadmore_params = {"ajaxurl":"https://finabank.ru/wp-admin/admin-ajax.p
 </script>
 <script src="../../wp-content/themes/finbank_theme/js/custom-script.js%3Fver=1778234128" id="card_scripts-js" defer data-wp-strategy="defer"></script>
 <script src="../../wp-includes/js/comment-reply.min.js%3Fver=6.9.4" id="comment-reply-js" async data-wp-strategy="async" fetchpriority="low"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?ver=1.8.1" id="slick-js-js"></script>
+<script defer src="../../wp-content/themes/finbank_theme/js/slick.min.js" id="slick-js-js"></script>
 <script id="ratings-script-js-extra">
 var my_ajax_object = {"ajax_url":"https://finabank.ru/wp-admin/admin-ajax.php","ajax_nonce":"7d5f6a2a30"};
 //# sourceURL=ratings-script-js-extra
@@ -28081,8 +28078,13 @@ var ajax_object_like_dislike = {"ajax_url":"https://finabank.ru/wp-admin/admin-a
 var ald_params = {"nonce":"8b9cf7031b","ajaxurl":"https://finabank.ru/wp-admin/admin-ajax.php","ald_pro":"0"};
 //# sourceURL=ald-scripts-js-extra
 </script>
-<script src="../../wp-content/plugins/ajax-load-more-anything/assets/scripts.js%3Fver=3.3.9" id="ald-scripts-js"></script>
-<script type="text/javascript">jQuery(document).ready(function($){var loader='<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';var flag=false;var main_xhr;var LoadMorePushAjax=function(url,args){jQuery('.ald_loader_progress').css({"-webkit-transform":"translate3d(-100%, 0px, 0px)","-ms-transform":"translate3d(-100%, 0px, 0px)","transform":"translate3d(-100%, 0px, 0px)",});if(args.data_implement_selectors){var dis=JSON.parse(args.data_implement_selectors)}if(main_xhr&&main_xhr.readyState!=4){main_xhr.abort()}args.target_url=url;main_xhr=jQuery.ajax({url:url,asynch:true,beforeSend:function(){jQuery('.ald_laser_loader').addClass('show');jQuery('.ald_loader_progress').css({"transition-duration":"2000ms","-webkit-transform":"translate3d(-20%, 0px, 0px)","-ms-transform":"translate3d(-20%, 0px, 0px)","transform":"translate3d(-20%, 0px, 0px)",});flag=true},success:function(data){jQuery(document).trigger('ald_ajax_content_ready',[data,args]);if(dis){for(var key in dis){var selector=dis[key].data_selector;var type=dis[key].implement_type;if(selector){var newData=jQuery(selector,data).html();if(type=="insert_before"){jQuery(selector).prepend(newData)}else if(type=="insert_after"){jQuery(selector).append(newData)}else{jQuery(selector).html(newData)}}}}jQuery(document).find('.tf_posts_navigation').removeClass('loading');jQuery('.ald-ajax-btn[data-alm-click-selector]').each(function(){if(jQuery(this).data('alm-click-selector')==args.click_selector){jQuery(this).removeClass('loading')}});jQuery('.ald_loader_progress').css({"transition-duration":"500ms","-webkit-transform":"translate3d(0%, 0px, 0px)","-ms-transform":"translate3d(0%, 0px, 0px)","transform":"translate3d(0%, 0px, 0px)",});setTimeout(function(){jQuery('.ald_laser_loader').removeClass('show');jQuery('.ald_loader_progress').css({"transition-duration":"0ms","-webkit-transform":"translate3d(-100%, 0px, 0px)","-ms-transform":"translate3d(-100%, 0px, 0px)","transform":"translate3d(-100%, 0px, 0px)",})},300);jQuery(document).trigger('ald_ajax_content_loaded',data);jQuery(document).trigger('ald_ajax_content_success',[args]);flag=false}})}});</script><script>function w3tc_ll_observe(ll){if(!ll||!ll.update)return;var t;new MutationObserver(function(){clearTimeout(t);t=setTimeout(function(){ll.update();},200);}).observe(document.documentElement,{childList:true,subtree:true});}window.addEventListener("LazyLoad::Initialized",function(e){setTimeout(function(){window.w3tc_lazyload=e.detail.instance;w3tc_ll_observe(window.w3tc_lazyload);},1);});window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="../../wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"></script></body>
+<script defer src="../../wp-content/plugins/ajax-load-more-anything/assets/scripts.js%3Fver=3.3.9" id="ald-scripts-js"></script>
+<script type="text/javascript">jQuery(document).ready(function($){var loader='<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';var flag=false;var main_xhr;var LoadMorePushAjax=function(url,args){jQuery('.ald_loader_progress').css({"-webkit-transform":"translate3d(-100%, 0px, 0px)","-ms-transform":"translate3d(-100%, 0px, 0px)","transform":"translate3d(-100%, 0px, 0px)",});if(args.data_implement_selectors){var dis=JSON.parse(args.data_implement_selectors)}if(main_xhr&&main_xhr.readyState!=4){main_xhr.abort()}args.target_url=url;main_xhr=jQuery.ajax({url:url,asynch:true,beforeSend:function(){jQuery('.ald_laser_loader').addClass('show');jQuery('.ald_loader_progress').css({"transition-duration":"2000ms","-webkit-transform":"translate3d(-20%, 0px, 0px)","-ms-transform":"translate3d(-20%, 0px, 0px)","transform":"translate3d(-20%, 0px, 0px)",});flag=true},success:function(data){jQuery(document).trigger('ald_ajax_content_ready',[data,args]);if(dis){for(var key in dis){var selector=dis[key].data_selector;var type=dis[key].implement_type;if(selector){var newData=jQuery(selector,data).html();if(type=="insert_before"){jQuery(selector).prepend(newData)}else if(type=="insert_after"){jQuery(selector).append(newData)}else{jQuery(selector).html(newData)}}}}jQuery(document).find('.tf_posts_navigation').removeClass('loading');jQuery('.ald-ajax-btn[data-alm-click-selector]').each(function(){if(jQuery(this).data('alm-click-selector')==args.click_selector){jQuery(this).removeClass('loading')}});jQuery('.ald_loader_progress').css({"transition-duration":"500ms","-webkit-transform":"translate3d(0%, 0px, 0px)","-ms-transform":"translate3d(0%, 0px, 0px)","transform":"translate3d(0%, 0px, 0px)",});setTimeout(function(){jQuery('.ald_laser_loader').removeClass('show');jQuery('.ald_loader_progress').css({"transition-duration":"0ms","-webkit-transform":"translate3d(-100%, 0px, 0px)","-ms-transform":"translate3d(-100%, 0px, 0px)","transform":"translate3d(-100%, 0px, 0px)",})},300);jQuery(document).trigger('ald_ajax_content_loaded',data);jQuery(document).trigger('ald_ajax_content_success',[args]);flag=false}})}});</script>
+<script defer src="../../wp-includes/js/jquery/jquery.min.js%3Fver=3.7.1" id="jquery-core-js"></script>
+<!-- <script defer src="../../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=3.4.1" id="jquery-migrate-js"></script> -->
+<script defer src="../../wp-content/plugins/wt_geotargeting_pro/js/cookie.js%3Fver=0.2.0" id="wt-cookie-js"></script>
+<script defer src="../../wp-content/plugins/wt_geotargeting_pro/js/wt-location.js%3Fver=1" id="wt-location-js"></script>
+</body>
 </html>
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
