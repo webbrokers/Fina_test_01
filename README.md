@@ -5,7 +5,7 @@
 Рабочий репозиторий для оптимизации страницы:  
 **[finabank.ru/collection/zajmy-s-plohoj-kreditnoj-istoriej/](https://finabank.ru/collection/zajmy-s-plohoj-kreditnoj-istoriej/)**
 
-Цель — улучшить PageSpeed Score (сейчас: 36 мобайл / 64 десктоп) и SEO-показатели.
+Цель — улучшить PageSpeed Score и SEO-показатели.
 
 ---
 
@@ -13,8 +13,8 @@
 
 ```
 /
-├── v1/    ← точная копия оригинала (эталон, не трогать!)
-└── v2/    ← экспериментальная версия (создаётся после проверки v1)
+├── v1/    ← точная копия оригинала (эталон, НЕ ТРОГАТЬ!)
+└── v2/    ← экспериментальная версия (оптимизация)
 ```
 
 ---
@@ -23,45 +23,57 @@
 
 | Версия | URL |
 |--------|-----|
-| **v1 (оригинал)** | https://webbrokers.github.io/Fina_test_01/v1/collection/zajmy-s-plohoj-kreditnoj-istoriej/ |
-| **v2 (эксперимент)** | *(создаётся позже)* |
+| **v1 (эталон)** | https://webbrokers.github.io/Fina_test_01/v1/collection/zajmy-s-plohoj-kreditnoj-istoriej/ |
+| **v2 (оптимизация)** | https://webbrokers.github.io/Fina_test_01/v2/collection/zajmy-s-plohoj-kreditnoj-istoriej/ |
 
 ---
 
-## Текущие метрики (исходник, 10.05.2026)
+## Метрики (baseline, 10.05.2026)
 
-| Метрика | Мобайл | Десктоп |
-|---------|--------|---------|
-| Performance | 36 🔴 | — |
-| LCP | 21.9s 🔴 | — |
-| TBT | 1040ms 🔴 | — |
-| CLS | 0.069 🟡 | — |
-| Accessibility | 64 🟡 | — |
-| Best Practices | 96 🟢 | — |
-| SEO | 83 🟡 | — |
+| Метрика | v1 (наш эталон) | Оригинал finabank.ru |
+|---------|----------------|----------------------|
+| Performance | **32** 🔴 | 36 🔴 |
+| LCP | 34.1s 🔴 | 21.9s 🔴 |
+| FCP | 4.0s 🔴 | — |
+| Accessibility | 64 🟡 | 64 🟡 |
+| Best Practices | 96 🟢 | 96 🟢 |
+| SEO | 83 🟡 | 83 🟡 |
+
+> v1 чуть медленнее оригинала — GitHub Pages не имеет CDN finabank, это нормально.
 
 ---
 
-## План работы
+## План оптимизации v2
 
-### ✅ v1 — Эталонная копия
-- [x] Скачать страницу со всеми ресурсами (wget --mirror)
-- [x] Скачать все картинки МФО из wp-content/uploads (94 шт.)
-- [x] Исправить lazyload (data-src → src, локальные пути)
-- [x] Опубликовать на GitHub Pages
+### 🔜 Приоритет 1 — Render-blocking JS (главная причина низкого score)
+- [ ] Перенести скрипты из `<head>` в конец `<body>` с `defer`
+- [ ] jQuery загружать последним
+- [ ] Убрать inline-блокирующие скрипты
 
-### 🔜 v2 — Оптимизация (после подтверждения v1)
-- [ ] Убрать render-blocking JS из `<head>` (17 скриптов → defer/async)
-- [ ] Удалить неиспользуемые библиотеки (tiny-slider, дубли CSS)
-- [ ] Оптимизировать LCP-изображение (preload)
-- [ ] Конвертировать картинки в WebP
+### 🔜 Приоритет 2 — LCP (34 сек → цель < 2.5 сек)
+- [ ] `<link rel="preload">` для LCP-изображения
+- [ ] Убрать lazyload с первого экрана (first viewport)
 - [ ] Inline critical CSS
-- [ ] Отложить геотаргетинг и аналитику
+
+### 🔜 Приоритет 3 — Лишние библиотеки
+- [ ] Удалить `tiny-slider.js` (не вызывается нигде)
+- [ ] Удалить дубли CSS-файлов
+- [ ] Отложить геотаргетинг и аналитику Яндекс/GA
+
+### 🔜 Приоритет 4 — Изображения
+- [ ] Конвертировать PNG/JPG → WebP для карточек МФО
+- [ ] Добавить `width` и `height` атрибуты (CLS fix)
 
 ---
 
-## Ресурсы
+## Лог изменений
 
-- [Оригинальная страница](https://finabank.ru/collection/zajmy-s-plohoj-kreditnoj-istoriej/)
-- [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Ffinabank.ru%2Fcollection%2Fzajmy-s-plohoj-kreditnoj-istoriej%2F)
-- [SEO-аудит Ника](https://github.com/webbrokers/Fina_test_01) *(в памяти агента)*
+### v1 (10.05.2026)
+- Точная копия оригинала: wget --mirror (85 файлов темы/плагинов)
+- 94 картинки МФО из wp-content/uploads
+- Исправлен lazyload: data-src → src
+- Скачан icons.svg, 502 xlink:href локализованы
+- Baseline PageSpeed: 32 мобайл
+
+### v2 (в работе)
+- Клон v1, оптимизация в процессе
