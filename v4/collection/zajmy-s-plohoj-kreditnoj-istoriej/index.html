@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Займы с плохой кредитной историей — Finabank v4</title>
+<style>/* critical.css */
+:root{--bg:#f5f7fb;--surface:#fff;--text:#1d2738;--muted:#667085;--primary:#14b8ad;--border:#e5e7eb;--radius:14px;--space-1:.5rem;--space-2:.75rem;--space-3:1rem;--space-4:1.5rem;--space-5:2rem;--shadow:0 8px 24px rgba(16,24,40,.06)}
+*,:before,:after{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92vw);margin-inline:auto}
+.site-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}.site-header__inner{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0}
+.hero{padding:1.25rem 0}.hero h1{font-size:1.5rem;margin:.25rem 0 1rem}
+.calc{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:var(--space-3)}
+.mfo-list{display:grid;gap:var(--space-3);margin:var(--space-4) 0}
+.mfo-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--space-3)}
+.mfo-card__header{display:flex;justify-content:space-between;gap:.75rem;align-items:center}.mfo-card__meta{display:flex;gap:.65rem;color:var(--muted);font-size:.875rem}
+.mfo-card__offer{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:.8rem 0}.mfo-card__offer-item{background:#f8fafc;border-radius:10px;padding:.5rem}
+.mfo-card__tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:.75rem 0}.mfo-card__tab{border:1px solid var(--border);background:#fff;padding:.45rem .7rem;border-radius:999px;font-size:.875rem}.mfo-card__tab--active{background:var(--primary);border-color:var(--primary);color:#fff}
+.mfo-card__panel[hidden]{display:none}.btn{display:inline-block;border-radius:10px;padding:.7rem 1rem;font-weight:600}.btn--primary{background:var(--primary);color:#fff}
+.skeleton{min-height:180px;position:relative;overflow:hidden;background:linear-gradient(90deg,#f1f3f8 25%,#e8ebf4 37%,#f1f3f8 63%);background-size:400% 100%;animation:sk 1.3s infinite}
+@keyframes sk{0%{background-position:100% 0}100%{background-position:0 0}}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (min-width:768px){.hero h1{font-size:2rem}}
+</style>
+<link rel="preload" as="image" href="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/Screenshot_1-1.webp">
+<link rel="preconnect" href="https://webbrokers.github.io" crossorigin>
+<meta name="description" content="Подборка займов с плохой кредитной историей: сравнение условий, ставок, сроков и требований.">
+<link rel="canonical" href="https://webbrokers.github.io/Fina_test_01/v4/collection/zajmy-s-plohoj-kreditnoj-istoriej/">
+<meta property="og:title" content="Займы с плохой кредитной историей">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webbrokers.github.io/Fina_test_01/v4/collection/zajmy-s-plohoj-kreditnoj-istoriej/">
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "name":"Займы с плохой кредитной историей",
+  "url":"https://webbrokers.github.io/Fina_test_01/v4/collection/zajmy-s-plohoj-kreditnoj-istoriej/",
+  "about":{"@type":"LoanOrCredit","name":"Подборка займов"}
+}</script>
+<link rel="stylesheet" href="../../../assets/css/main.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="../../../assets/css/main.css"></noscript>
+</head>
+<body>
+<header class="site-header"><div class="container site-header__inner"><a href="https://finabank.ru/" class="site-header__logo">Finabank</a><button id="themeToggle" class="btn btn--outline" type="button" aria-label="Переключить тему">Тема</button></div></header>
+<main>
+<section class="section"><div class="container"><nav class="breadcrumb" aria-label="Хлебные крошки"><a href="https://finabank.ru/">Главная</a><span>/</span><a href="https://finabank.ru/zaimy/">Займы</a><span>/</span><span aria-current="page">С плохой кредитной историей</span></nav>
+<div class="hero"><h1>Займы с плохой кредитной историей</h1>
+<div class="calc" id="loanCalc"><h2>Калькулятор займов</h2><div class="calc__grid"><label>Сумма займа <input id="sumRange" class="range" type="range" min="1000" max="100000" value="10000"></label><label>Срок / дней <input id="daysRange" class="range" type="range" min="1" max="30" value="14"></label></div><div class="calc__result"><div>Сумма: <strong id="sumOut">10 000 ₽</strong></div><div>Переплата: <strong id="overpayOut">38 ₽</strong></div><div>К возврату: <strong id="totalOut">10 038 ₽</strong></div></div></div>
+</div>
+<section aria-label="Список МФО"><div class="actions"><button id="filterButton" class="btn btn--outline" type="button">Фильтр</button><button id="showMoreBtn" class="btn btn--outline" type="button">Показать ещё</button></div><div class="mfo-list" id="mfoList"><article class="mfo-card" data-card-id="1" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/Screenshot_1-1.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/Screenshot_1-1.webp" alt="Займер" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Займер</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.0</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>100 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 365 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Займер">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>100 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 365 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaymer-zaim/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="2" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/webzaim.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/webzaim.webp" alt="ВебЗайм" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">ВебЗайм</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы ВебЗайм">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaim-in-web-zaim/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="3" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/webbankir.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/webbankir.webp" alt="Вэббанкир" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Вэббанкир</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>50 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 180 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Вэббанкир">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>50 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 180 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-webbankir/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="4" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/e-cabbage.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/e-cabbage.webp" alt="еКапуста" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">еКапуста</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.8</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 21 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы еКапуста">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 21 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-e-kapusta/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="5" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/11/belka.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/11/belka.webp" alt="Belka Credit" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Belka Credit</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 29 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Belka Credit">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 29 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-belka-credit/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="6" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/joymoney.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/joymoney.webp" alt="ДжойМани" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">ДжойМани</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.8</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>100 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 168 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы ДжойМани">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>100 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 168 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-dzhoy-mani/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="7" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/cashiro-logo.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/cashiro-logo.webp" alt="CASHIRO" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">CASHIRO</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы CASHIRO">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-cashiro/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="8" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/rocketman-logo.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/rocketman-logo.webp" alt="РокетМэн" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">РокетМэн</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.8</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы РокетМэн">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-roketmen/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="9" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/likezaim-logo.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/likezaim-logo.webp" alt="ЛайкЗайм" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">ЛайкЗайм</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 15 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы ЛайкЗайм">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 15 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-laykzaym/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="10" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2024/04/495credit.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2024/04/495credit.webp" alt="495Кредит" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">495Кредит</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.2</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы 495Кредит">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-495-kredit/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="11" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2024/11/max-credit-logo.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2024/11/max-credit-logo.webp" alt="Макс Кредит" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Макс Кредит</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.7</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Макс Кредит">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-max-credit/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="12" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/bistrodengi.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/bistrodengi.webp" alt="Быстроденьги" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Быстроденьги</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>100 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 180 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Быстроденьги">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>100 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 180 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-bystrodengi/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="13" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/dengi-ok.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2025/06/dengi-ok.webp" alt="Деньги ОК" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Деньги ОК</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.3</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>20 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 15 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Деньги ОК">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>20 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 15 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-dengi-ok/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="14" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/moneyman.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/moneyman.webp" alt="MoneyMan" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">MoneyMan</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.0</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>100 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 126 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы MoneyMan">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>100 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 126 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-moneyman/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="15" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/turbozaim.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/09/turbozaim.webp" alt="Турбозайм" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Турбозайм</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.4</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>50 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 168 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Турбозайм">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>50 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 168 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-turbozaym/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="16" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2023/07/dozarplaty.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2023/07/dozarplaty.webp" alt="До Зарплаты" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">До Зарплаты</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.9</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы До Зарплаты">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zaym-v-do-zarplaty/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="17" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2023/07/nadodeneg.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2023/07/nadodeneg.webp" alt="Надо денег" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Надо денег</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.8</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Надо денег">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-nado-deneg/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="18" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/11/kredito24.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/11/kredito24.webp" alt="Kredito24" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Kredito24</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">3.6</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0.8%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Kredito24">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0.8%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-kredito24/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="19" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/11/lime.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2022/11/lime.webp" alt="Lime" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Lime</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.1</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>70 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 168 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Lime">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>70 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 168 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-lime-zaim/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article>
+<article class="mfo-card" data-card-id="20" itemscope itemtype="https://schema.org/Organization">
+  <div class="mfo-card__header">
+    <div>
+      <picture>
+        <source srcset="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2023/07/credit7.webp" type="image/webp">
+        <img src="https://webbrokers.github.io/Fina_test_01/v3/wp-content/uploads/2023/07/credit7.webp" alt="Credit7" width="120" height="40" loading="lazy" itemprop="logo">
+      </picture>
+      <div class="mfo-card__title" itemprop="name">Credit7</div>
+    </div>
+    <div class="mfo-card__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">★ <span itemprop="ratingValue">4.2</span></div>
+  </div>
+  <div class="mfo-card__offer"><div class="mfo-card__offer-item"><strong>Сумма</strong><br>30 000 ₽</div><div class="mfo-card__offer-item"><strong>Срок</strong><br>до 30 дн</div><div class="mfo-card__offer-item"><strong>Ставка</strong><br>От 0%</div></div>
+  <div class="mfo-card__tabs" role="tablist" aria-label="Табы Credit7">
+    <button class="mfo-card__tab mfo-card__tab--active" role="tab" aria-selected="true" data-tab="terms">Условия</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="req">Требования</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="legal">Реквизиты</button>
+    <button class="mfo-card__tab" role="tab" aria-selected="false" data-tab="pros">Плюсы/минусы</button>
+  </div>
+  <div class="mfo-card__content">
+    <div class="mfo-card__panel" data-panel="terms"><div class="mfo-card__table"><div class="mfo-card__row"><span>Сумма</span><span>30 000 ₽</span></div><div class="mfo-card__row"><span>Срок</span><span>до 30 дн</span></div><div class="mfo-card__row"><span>Ставка</span><span>От 0%</span></div></div></div>
+    <div class="mfo-card__panel" data-panel="req" hidden><p>Возраст 18+, паспорт РФ, мобильный телефон, любая КИ.</p></div>
+    <div class="mfo-card__panel" data-panel="legal" hidden><p>Данные юрлица и лицензии смотрите на странице продукта.</p></div>
+    <div class="mfo-card__panel" data-panel="pros" hidden><ul><li>Онлайн заявка 24/7</li><li>Высокий шанс одобрения</li><li>Высокая ставка при повторном займе</li></ul></div>
+  </div>
+  <a class="mfo-card__cta btn btn--primary" href="https://finabank.ru/zaimy/zajm-v-credit7/" rel="nofollow noopener" itemprop="url">Получить займ</a>
+</article><article class="mfo-card skeleton" data-card-id="21" aria-label="Загрузка карточки 21"></article>
+<article class="mfo-card skeleton" data-card-id="22" aria-label="Загрузка карточки 22"></article>
+<article class="mfo-card skeleton" data-card-id="23" aria-label="Загрузка карточки 23"></article>
+<article class="mfo-card skeleton" data-card-id="24" aria-label="Загрузка карточки 24"></article>
+<article class="mfo-card skeleton" data-card-id="25" aria-label="Загрузка карточки 25"></article>
+<article class="mfo-card skeleton" data-card-id="26" aria-label="Загрузка карточки 26"></article>
+<article class="mfo-card skeleton" data-card-id="27" aria-label="Загрузка карточки 27"></article>
+<article class="mfo-card skeleton" data-card-id="28" aria-label="Загрузка карточки 28"></article>
+<article class="mfo-card skeleton" data-card-id="29" aria-label="Загрузка карточки 29"></article>
+<article class="mfo-card skeleton" data-card-id="30" aria-label="Загрузка карточки 30"></article>
+<article class="mfo-card skeleton" data-card-id="31" aria-label="Загрузка карточки 31"></article>
+<article class="mfo-card skeleton" data-card-id="32" aria-label="Загрузка карточки 32"></article>
+<article class="mfo-card skeleton" data-card-id="33" aria-label="Загрузка карточки 33"></article>
+<article class="mfo-card skeleton" data-card-id="34" aria-label="Загрузка карточки 34"></article>
+<article class="mfo-card skeleton" data-card-id="35" aria-label="Загрузка карточки 35"></article>
+<article class="mfo-card skeleton" data-card-id="36" aria-label="Загрузка карточки 36"></article>
+<article class="mfo-card skeleton" data-card-id="37" aria-label="Загрузка карточки 37"></article>
+<article class="mfo-card skeleton" data-card-id="38" aria-label="Загрузка карточки 38"></article>
+<article class="mfo-card skeleton" data-card-id="39" aria-label="Загрузка карточки 39"></article>
+<article class="mfo-card skeleton" data-card-id="40" aria-label="Загрузка карточки 40"></article>
+<article class="mfo-card skeleton" data-card-id="41" aria-label="Загрузка карточки 41"></article>
+<article class="mfo-card skeleton" data-card-id="42" aria-label="Загрузка карточки 42"></article>
+<article class="mfo-card skeleton" data-card-id="43" aria-label="Загрузка карточки 43"></article>
+<article class="mfo-card skeleton" data-card-id="44" aria-label="Загрузка карточки 44"></article>
+<article class="mfo-card skeleton" data-card-id="45" aria-label="Загрузка карточки 45"></article>
+<article class="mfo-card skeleton" data-card-id="46" aria-label="Загрузка карточки 46"></article>
+<article class="mfo-card skeleton" data-card-id="47" aria-label="Загрузка карточки 47"></article>
+<article class="mfo-card skeleton" data-card-id="48" aria-label="Загрузка карточки 48"></article>
+<article class="mfo-card skeleton" data-card-id="49" aria-label="Загрузка карточки 49"></article>
+<article class="mfo-card skeleton" data-card-id="50" aria-label="Загрузка карточки 50"></article>
+<article class="mfo-card skeleton" data-card-id="51" aria-label="Загрузка карточки 51"></article>
+<article class="mfo-card skeleton" data-card-id="52" aria-label="Загрузка карточки 52"></article>
+<article class="mfo-card skeleton" data-card-id="53" aria-label="Загрузка карточки 53"></article>
+<article class="mfo-card skeleton" data-card-id="54" aria-label="Загрузка карточки 54"></article>
+<article class="mfo-card skeleton" data-card-id="55" aria-label="Загрузка карточки 55"></article>
+<article class="mfo-card skeleton" data-card-id="56" aria-label="Загрузка карточки 56"></article>
+<article class="mfo-card skeleton" data-card-id="57" aria-label="Загрузка карточки 57"></article>
+<article class="mfo-card skeleton" data-card-id="58" aria-label="Загрузка карточки 58"></article>
+<article class="mfo-card skeleton" data-card-id="59" aria-label="Загрузка карточки 59"></article>
+<article class="mfo-card skeleton" data-card-id="60" aria-label="Загрузка карточки 60"></article>
+<article class="mfo-card skeleton" data-card-id="61" aria-label="Загрузка карточки 61"></article>
+<article class="mfo-card skeleton" data-card-id="62" aria-label="Загрузка карточки 62"></article>
+<article class="mfo-card skeleton" data-card-id="63" aria-label="Загрузка карточки 63"></article>
+<article class="mfo-card skeleton" data-card-id="64" aria-label="Загрузка карточки 64"></article>
+<article class="mfo-card skeleton" data-card-id="65" aria-label="Загрузка карточки 65"></article>
+<article class="mfo-card skeleton" data-card-id="66" aria-label="Загрузка карточки 66"></article>
+<article class="mfo-card skeleton" data-card-id="67" aria-label="Загрузка карточки 67"></article>
+<article class="mfo-card skeleton" data-card-id="68" aria-label="Загрузка карточки 68"></article>
+<article class="mfo-card skeleton" data-card-id="69" aria-label="Загрузка карточки 69"></article>
+<article class="mfo-card skeleton" data-card-id="70" aria-label="Загрузка карточки 70"></article>
+<article class="mfo-card skeleton" data-card-id="71" aria-label="Загрузка карточки 71"></article>
+<article class="mfo-card skeleton" data-card-id="72" aria-label="Загрузка карточки 72"></article>
+<article class="mfo-card skeleton" data-card-id="73" aria-label="Загрузка карточки 73"></article>
+<article class="mfo-card skeleton" data-card-id="74" aria-label="Загрузка карточки 74"></article>
+<article class="mfo-card skeleton" data-card-id="75" aria-label="Загрузка карточки 75"></article>
+<article class="mfo-card skeleton" data-card-id="76" aria-label="Загрузка карточки 76"></article>
+<article class="mfo-card skeleton" data-card-id="77" aria-label="Загрузка карточки 77"></article>
+<article class="mfo-card skeleton" data-card-id="78" aria-label="Загрузка карточки 78"></article>
+<article class="mfo-card skeleton" data-card-id="79" aria-label="Загрузка карточки 79"></article>
+<article class="mfo-card skeleton" data-card-id="80" aria-label="Загрузка карточки 80"></article>
+<article class="mfo-card skeleton" data-card-id="81" aria-label="Загрузка карточки 81"></article>
+<article class="mfo-card skeleton" data-card-id="82" aria-label="Загрузка карточки 82"></article>
+<article class="mfo-card skeleton" data-card-id="83" aria-label="Загрузка карточки 83"></article>
+<article class="mfo-card skeleton" data-card-id="84" aria-label="Загрузка карточки 84"></article>
+<article class="mfo-card skeleton" data-card-id="85" aria-label="Загрузка карточки 85"></article>
+<article class="mfo-card skeleton" data-card-id="86" aria-label="Загрузка карточки 86"></article>
+<article class="mfo-card skeleton" data-card-id="87" aria-label="Загрузка карточки 87"></article>
+<article class="mfo-card skeleton" data-card-id="88" aria-label="Загрузка карточки 88"></article>
+<article class="mfo-card skeleton" data-card-id="89" aria-label="Загрузка карточки 89"></article>
+<article class="mfo-card skeleton" data-card-id="90" aria-label="Загрузка карточки 90"></article>
+<article class="mfo-card skeleton" data-card-id="91" aria-label="Загрузка карточки 91"></article>
+<article class="mfo-card skeleton" data-card-id="92" aria-label="Загрузка карточки 92"></article>
+<article class="mfo-card skeleton" data-card-id="93" aria-label="Загрузка карточки 93"></article>
+<article class="mfo-card skeleton" data-card-id="94" aria-label="Загрузка карточки 94"></article>
+<article class="mfo-card skeleton" data-card-id="95" aria-label="Загрузка карточки 95"></article>
+<article class="mfo-card skeleton" data-card-id="96" aria-label="Загрузка карточки 96"></article>
+<article class="mfo-card skeleton" data-card-id="97" aria-label="Загрузка карточки 97"></article>
+<article class="mfo-card skeleton" data-card-id="98" aria-label="Загрузка карточки 98"></article>
+<article class="mfo-card skeleton" data-card-id="99" aria-label="Загрузка карточки 99"></article>
+<article class="mfo-card skeleton" data-card-id="100" aria-label="Загрузка карточки 100"></article>
+<article class="mfo-card skeleton" data-card-id="101" aria-label="Загрузка карточки 101"></article>
+<article class="mfo-card skeleton" data-card-id="102" aria-label="Загрузка карточки 102"></article>
+<article class="mfo-card skeleton" data-card-id="103" aria-label="Загрузка карточки 103"></article>
+<article class="mfo-card skeleton" data-card-id="104" aria-label="Загрузка карточки 104"></article>
+<article class="mfo-card skeleton" data-card-id="105" aria-label="Загрузка карточки 105"></article>
+<article class="mfo-card skeleton" data-card-id="106" aria-label="Загрузка карточки 106"></article>
+<article class="mfo-card skeleton" data-card-id="107" aria-label="Загрузка карточки 107"></article>
+<article class="mfo-card skeleton" data-card-id="108" aria-label="Загрузка карточки 108"></article>
+<article class="mfo-card skeleton" data-card-id="109" aria-label="Загрузка карточки 109"></article>
+<article class="mfo-card skeleton" data-card-id="110" aria-label="Загрузка карточки 110"></article>
+<article class="mfo-card skeleton" data-card-id="111" aria-label="Загрузка карточки 111"></article>
+<article class="mfo-card skeleton" data-card-id="112" aria-label="Загрузка карточки 112"></article>
+<article class="mfo-card skeleton" data-card-id="113" aria-label="Загрузка карточки 113"></article>
+<article class="mfo-card skeleton" data-card-id="114" aria-label="Загрузка карточки 114"></article>
+<article class="mfo-card skeleton" data-card-id="115" aria-label="Загрузка карточки 115"></article>
+<article class="mfo-card skeleton" data-card-id="116" aria-label="Загрузка карточки 116"></article>
+<article class="mfo-card skeleton" data-card-id="117" aria-label="Загрузка карточки 117"></article>
+<article class="mfo-card skeleton" data-card-id="118" aria-label="Загрузка карточки 118"></article>
+<article class="mfo-card skeleton" data-card-id="119" aria-label="Загрузка карточки 119"></article>
+<article class="mfo-card skeleton" data-card-id="120" aria-label="Загрузка карточки 120"></article>
+<article class="mfo-card skeleton" data-card-id="121" aria-label="Загрузка карточки 121"></article>
+<article class="mfo-card skeleton" data-card-id="122" aria-label="Загрузка карточки 122"></article>
+<article class="mfo-card skeleton" data-card-id="123" aria-label="Загрузка карточки 123"></article>
+<article class="mfo-card skeleton" data-card-id="124" aria-label="Загрузка карточки 124"></article>
+<article class="mfo-card skeleton" data-card-id="125" aria-label="Загрузка карточки 125"></article></div></section>
+</div></section>
+</main>
+<footer class="section"><div class="container"><small>© Finabank v4</small></div></footer>
+<script type="module" src="../../../assets/js/main.js" defer></script>
+<script type="module" src="../../../assets/js/components/tabs.js" defer></script>
+<script type="module" src="../../../assets/js/components/accordion.js" defer></script>
+<script type="module" src="../../../assets/js/components/filters.js" defer></script>
+<script type="module" src="../../../assets/js/components/loadMore.js" defer></script>
+<script type="module" src="../../../assets/js/components/themeToggle.js" defer></script>
+<script type="module" src="../../../assets/js/components/calculator.js" async></script>
+</body></html>

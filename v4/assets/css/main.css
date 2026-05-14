@@ -1,0 +1,11 @@
+/* main.css */
+.section{padding:1.5rem 0}.breadcrumb{display:flex;gap:.5rem;font-size:.875rem;color:#64748b;margin:.75rem 0}
+.calc__grid{display:grid;gap:1rem}.range{width:100%}.calc__result{background:#f8fafc;border:1px solid var(--border);border-radius:12px;padding:1rem}
+.mfo-card__title{font-size:1.125rem;font-weight:700}.mfo-card__rating{font-weight:700;color:#0f766e}
+.mfo-card__table{display:grid;gap:.5rem}.mfo-card__row{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.45rem 0;border-bottom:1px dashed #eef2f7}.mfo-card__row:last-child{border-bottom:0}
+.actions{display:flex;gap:.75rem;align-items:center;justify-content:center}.btn--outline{border:1px solid var(--border);background:#fff}
+[data-theme="dark"]{--bg:#0f172a;--surface:#111827;--text:#e5e7eb;--muted:#9ca3af;--border:#374151;--shadow:none}
+[data-theme="dark"] .mfo-card__offer-item,[data-theme="dark"] .calc__result{background:#1f2937}
+@media (min-width:768px){.calc__grid{grid-template-columns:1fr 1fr}.mfo-list{gap:1rem}}
+@media (min-width:1024px){.mfo-card{padding:1.25rem}.mfo-card__header{align-items:flex-start}}
+@media (min-width:1280px){.container{width:min(1240px,92vw)}}
