@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+.zaimy-new .breadcrumb {
+  margin-bottom: 0;
+}
+
+
+.article__category-icon {
+  color: var(--primary);
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.wpulike {
+  padding: 0;
+}
+
+.wpulike-heart .wp_ulike_general_class {
+  box-shadow: inherit;
+  padding: 0;
+  height: 20px;
+  width: 40px;
+}
+
+.wpulike-heart .count-box {
+  color: var(--card-icon);
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 400;
+  padding: 0 5px 0 9px;
+}
+
+.wpulike-heart button.wp_ulike_btn {
+  background: 0 0;
+  padding: 15px;
+}
+
+.wpulike-heart .wp_ulike_put_image:after {
+  filter: contrast(0%) opacity(0.3);
+  transform: inherit;
+  top: -2px;
+  left: 0px;
+}
+
+.wpulike-heart .wp_ulike_put_image.wp_ulike_btn_is_active:after {
+  animation: none;
+}
+
+.article__one-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/10;
+}
+
+.card__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/10;
+}
+
+.range__input[type=range] {
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, var(--range-active) var(--range-progress), var(--range-bg) var(--range-progress));
+  border-radius: 10px;
+  height: 6px;
+  margin: 14px 0 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+.range__input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f7c206;
+  cursor: pointer;
+  box-shadow: 0 0 0 7px rgba(247, 194, 6, 0.22);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-image: none;
+}
+
+.range__input[type=range]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 5px rgba(247, 194, 6, 0.22);
+  width: 18px;
+  height: 18px;
+}
+
+[data-theme=dark] .range__input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f7c206;
+  cursor: pointer;
+  box-shadow: 0 0 0 7px rgba(247, 194, 6, 0.22);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-image: none;
+}
+
+[data-theme=dark] .range__input[type=range]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 5px rgba(247, 194, 6, 0.22);
+  width: 18px;
+  height: 18px;
+}
+
+.about {
+  background-position: 25% 63%;
+  margin-bottom: 30px;
+}
+
+.tariffs__list-item {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+@media screen and (max-width: 1920px) {
+  .about {
+    background-position: 15% 63%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .range__input[type=range]::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+  }
+  [data-theme=dark] .range__input[type=range]::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+  }
+  .bankcard-new-card .apply_now_btm {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    background-position: 60% -45px;
+  }
+}
+.range__input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: none;
+  background: #f7c206;
+  cursor: pointer;
+  box-shadow: 0 0 0 7px rgba(247, 194, 6, 0.22);
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.range__input[type=range]::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 5px rgba(247, 194, 6, 0.22);
+  width: 18px;
+  height: 18px;
+}
+
+[data-theme=dark] .range__input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: none;
+  background: #f7c206;
+  cursor: pointer;
+  box-shadow: 0 0 0 7px rgba(247, 194, 6, 0.22);
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+
+[data-theme=dark] .range__input[type=range]::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 5px rgba(247, 194, 6, 0.22);
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .range__input[type=range]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+  }
+}
+.calc__range-slider .slider:hover::-webkit-slider-thumb {
+  box-shadow: 0 0 0 10px rgba(247, 194, 6, 0.22);
+}
+
+.calc__field .range__input {
+  bottom: -2px;
+  left: 16px;
+  margin: 0;
+  position: absolute;
+  right: 16px;
+  width: auto;
+}
+
+.btn_compare_on {
+  background-color: var(--primary-outline-hover-bg);
+}
+
+.btn_compare_on svg {
+  fill: var(--primary-outline-hover-color);
+}
+
+.card__header {
+  width: 100%;
+}
+
+.card__header .btn_compare_on {
+  background-color: transparent;
+}
+
+.card__header .btn_compare_on svg {
